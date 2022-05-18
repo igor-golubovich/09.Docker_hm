@@ -35,4 +35,4 @@ Connected to localhost.
 Escape character is '^]'.
 
 Connection closed by foreign host.
-igoz@Ubuntu20:~/Desktop/devops_homework/Docker$
+igoz@Ubuntu20:~/Desktop/devops_homework/Docker
