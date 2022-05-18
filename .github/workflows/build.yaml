@@ -20,12 +20,12 @@ jobs:
       - name: Docker Login
         uses: docker/login-action@v2.0.0
         with:
-          username: golubovich91
-          password: 1245ig1425
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASS }}
 
       - name: Build and push Docker images
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: golubovich91/web_test:v1.0
+          tags: ${{ secrets.DOCKER_USERNAME }}/web_test:v1.0
